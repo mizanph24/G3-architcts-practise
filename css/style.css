@@ -15,6 +15,23 @@
     outline: 0;
     margin: 10px 0;
 }
+.container{
+    max-width: 1000px;
+    margin: 60px auto;
+    border: 1px solid black;
+}
+.title{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.description{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin: 10px 0;
+}
 body{
     font-family: 'Work Sans', sans-serif;
 }
@@ -67,6 +84,129 @@ header{
  }
 
 /* Feature CSS */
+.feature-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+.feature-content-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.feature-content-img img{
+    width: 100%;
+}
+.feature-content-text{
+    padding: 0 30px;
+}
+.feature-content-text h2{
+
+}
+.quick{
+    color: #727272;
+    font-weight: 500;
+}
+.our{
+     color: #131313;
+    font-weight: 700;
+}
+.text-feature{
+   color: #FF900E;
+    font-weight: 700;
+}
+
+/* Features you will love & enjoy */
+
+.feature-items{
+    display: grid;
+    /* grid-template-columns: 500px 500px; */
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+}
+.feature-items-content > h2{
+    font-weight: 700;
+    padding: 0 10px;
+    border-left: 5px solid tomato;
+}
+.feature-items-text-discuss > h4{
+    color:  #131313;
+    font-size: 17px;
+    font-weight: 600;
+}
+.feature-items-text-discuss > p{
+    color: #727272;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.feature-items-text-discuss{
+    padding: 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin: 10px 0;
+}
+.feature-items-img{
+    /* position: absolute; */
+}
+.feature-items-img img{
+    width: 100%;
+}
+.feature-items-experiance{
+    padding: 20px 42px;
+    border-radius: 8px;
+    background: #FF900E;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    left: -50px;
+}
+.feature-items-experiance > h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+.feature-items-experiance > p{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+/* Some Fact */
+.some-fact-text{
+    width: 60%;
+}
+.some-fact-text > h2{
+    font-weight: 700;
+}
+.some-fact-items{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+.item{
+    width: 200px;
+    height: 140px;
+    padding: 20px 0px 40px 0px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    display: block;
+   
+}
+.item h2{
+    color: #424242;
+    font-size: 35px; 
+    font-weight: 600;
+    margin: 10px 0;
+}
+.item p{
+    color: #727272;
+     font-size: 20px;
+    font-weight: 600;
+}
 
 
  /* responsive CSS */
@@ -79,7 +219,30 @@ header{
         gap: 30px;
      flex-direction: column;
        }
-    
+/*feature  */
+       .feature-content{
+        padding: 0 40px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        text-align: center;
+    }
+/* Features you will love & enjoy */
+.feature-items{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 20px;
+}
+/* Some Fact */
+.some-fact-contant{
+    padding: 10px;
+}
+.some-fact-items{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding: 30px 0;
+}
+
  }
 
  /* tablet Devices */
@@ -91,4 +254,18 @@ header{
         gap: 30px;
      flex-direction: column;
        }
+       /*feature  */
+       .feature-content{
+        padding: 0 40px;
+        
+    }
+/* Features you will love & enjoy */
+
+    .feature-items{
+        padding: 10px 20px;
+    }
+
+    .some-fact-contant{
+        padding: 10px;
+    }
  }
