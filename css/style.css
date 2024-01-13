@@ -273,7 +273,16 @@ footer{
     row-gap: 30px;
     padding: 30px 0;
 }
-
+.sponspors-img{
+    width: 70%;
+    margin:40px auto;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    row-gap: 50px;
+    align-items: center;
+    
+}
  }
 
  /* tablet Devices */
