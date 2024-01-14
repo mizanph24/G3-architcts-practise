@@ -72,7 +72,7 @@ header{
     text-align: center;
 }
 .header-banner-text .header-banner-title{
-     font-size: 53px;
+     font-size: 40px;
     font-weight: 700;
  }
  .header-banner-text .header-banner-description{
@@ -250,6 +250,11 @@ footer{
         gap: 30px;
      flex-direction: column;
        }
+    
+    .header-banner-text{
+        padding: 10px 10px;
+   
+    }
 /*feature  */
        .feature-content{
         padding: 0 40px;
@@ -319,5 +324,9 @@ footer{
         row-gap: 50px;
         align-items: center;
         
+    }
+    .header-banner-text{
+        padding: 10px 10px;
+   
     }
  }
